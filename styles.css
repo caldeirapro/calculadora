@@ -1,0 +1,91 @@
+/* Resetando estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculadora {
+    background-color: #fff;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .display {
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .botao {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #666;
+  }
+  
+  #clear {
+    background-color: #e74c3c;
+  }
+  
+  #clear:hover {
+    background-color: #c0392b;
+  }
+  
+  #igual {
+    background-color: #2ecc71;
+    grid-column: span 2;
+  }
+  
+  #igual:hover {
+    background-color: #27ae60;
+  }
+  
+  #porcentagem, #divisao, #multiplicacao, #subtracao, #soma {
+    background-color: #95a5a6;
+  }
+  
+  #porcentagem:hover,
+  #divisao:hover,
+  #multiplicacao:hover,
+  #subtracao:hover,
+  #soma:hover {
+    background-color: #7f8c8d;
+  }
+  
+  #zero {
+    grid-column: span 2;
+  }
+  
